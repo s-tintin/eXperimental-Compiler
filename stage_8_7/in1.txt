@@ -1,0 +1,9 @@
+decl
+	int i,j,temp,k,l,arr[100],n;
+enddecl
+
+begin
+ 	arr[100] = 3;
+	write(arr[100]);
+	write(n);
+end

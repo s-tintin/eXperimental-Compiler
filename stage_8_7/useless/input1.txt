@@ -1,0 +1,19 @@
+decl
+int a,b,c,i,arr[10];
+enddecl
+bgein
+read(a);
+read(arr[a]);
+read(b);
+read(c);
+read(i);
+arr[4] = b+c;
+arr[9] = c*i;
+write(a);
+write(b);
+write(c);
+write(i);
+write(arr[a]);
+write(arr[4]);
+write(arr[9]);
+end

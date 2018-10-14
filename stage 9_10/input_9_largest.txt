@@ -1,0 +1,33 @@
+decl
+	int largest(int a,b;);
+enddecl
+
+int largest(int a,b;)
+{
+	decl
+		int max;
+	enddecl
+
+	begin
+		if(a < b) then
+			max = b;
+		else
+			max = a;
+		endif;
+
+		return max;
+	end
+}
+
+int main()
+{
+	decl
+		int a,b;
+	enddecl
+
+	begin
+		read(a);
+		read(b);
+		write(largest(a,b));
+	end
+}

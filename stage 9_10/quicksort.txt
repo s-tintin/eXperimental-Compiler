@@ -1,0 +1,68 @@
+decl
+	int array[10];
+	int quicksort(int first,last;);
+enddecl
+
+int quicksort(int first,last;)
+{
+	decl
+		int pivot,j,temp,i,ret,retw;
+	enddecl
+
+	begin
+		ret = 0;
+		if(first < last) then
+			pivot = first;
+			i = first;
+			j = last;
+
+			while(i < j) do
+				while(array[i] <= array[pivot] && i < last) do
+					i = i + 1;
+				endwhile;
+				while(array[j] > array[pivot]) do
+					j = j -1;
+				endwhile;
+
+				if(i < j) then
+					temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				endif;
+			endwhile;		
+	
+			temp = array[pivot];
+			array[pivot] = array[j];
+			array[j] = temp;
+
+			retw = j-1;
+			ret = quicksort(first,retw);
+			retw = j+1;
+			ret = quicksort(retw,last);	
+		endif;
+		return ret;
+	end
+}
+
+int main()
+{
+	decl
+		int i,ret;
+	enddecl
+
+	begin
+		i = 0;
+		while(i<10) do
+			read(array[i]);
+			i = i+1;
+		endwhile;
+
+		ret = quicksort(0,9);
+
+		i = 0;
+		while(i<10) do
+			write(array[i]);
+			i = i+1;
+		endwhile;
+	end
+}		

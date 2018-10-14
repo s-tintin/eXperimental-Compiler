@@ -1,0 +1,13 @@
+decl
+int a[10];
+int i;
+enddecl
+begin
+i=10;
+read(a[i]);
+write(a[i]);
+end
+
+
+
+

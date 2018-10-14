@@ -1,0 +1,47 @@
+decl
+	int fact(int n;);
+	int abc();
+	int n;
+enddecl
+
+int fact(int n;)
+{
+	decl
+		int i;
+	enddecl
+
+	begin
+		if(n > 1) then
+			i = n*fact(n-1);
+		else
+			i = 1;
+		endif;
+		return i;
+	end
+}
+
+int abc()
+{
+	decl
+		int i;
+	enddecl
+
+	begin
+		read(i);
+		return i;
+	end
+}
+
+int main()
+{
+	decl
+		int n;
+	enddecl
+
+	begin
+		write(abc());
+		read(n);
+		write(fact(n));
+	end
+}
+	
