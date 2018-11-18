@@ -1,1 +1,2 @@
 # eXperimental-Compiler
+This toy compiler was built as part of Compiler Labaratory at NITC. This compiler was built for a custom instructional language called Expl (experimental language). The Application Binary Interface (ABI) of this project is eXperimental Operating System (XOS) runnin on a simulated machine, eXperimental String Machine (XSM). Implemented lexical and syntax analysis using LEX/YACC tool, symbol tree, abstract syntax tree, variable binding, semantic analysis, register allocation and machine code generation using the tools provided.
